@@ -14,7 +14,7 @@ function tableVerification(result){
         x = "Sobrepeso"
     }else if(result >=30 && result <=34.9){
         x = "Obesidade 1"
-    }else if(result >=35 && result >=39.9){
+    }else if(result >=35 && result <=39.9){
          x = "Obesidade 2"
     }else if(result >=40){
          x = "Obesidade 3"
