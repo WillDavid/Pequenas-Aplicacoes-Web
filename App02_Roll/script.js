@@ -4,11 +4,15 @@ function roll(n){
 }
 
 function qtd(quant,dado){
+    const div = document.createElement('div')
     for (let i = 0; i < quant; i++) {
-        const x = document.createElement('span')
-        x.innerHTML = `${roll(dado)}`
+        const rol = document.createElement('span')
+        rol.innerHTML = `${roll(dado)} `
+        div.appendChild(rol)
     }
+    return div
 }
+
 
 const typeDado = document.getElementById('dado')
 const qtdDado = document.getElementById('quantidade')
@@ -16,13 +20,14 @@ const buttonSubmit = document.getElementById('submit')
 const result = document.getElementById('resultado')
 
 buttonSubmit.onclick = (e) => {
+    e.preventDefault();
     const dado = parseInt(typeDado.value);
     const quant = parseInt(qtdDado.value);
+    const x = qtd(quant,dado);
+    result.innerHTML = `${x.innerHTML}`;
 
-    const r = document.createElement('div')
-    r.innerHTML = qtd(quant, dado)
-
-    result.appendChild(r)
+    typeDado.value = ''
+    qtdDado.value = ''
 
 }
 
