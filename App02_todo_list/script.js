@@ -11,6 +11,5 @@ form.addEventListener("submit", (evento) => {
     li.innerHTML = `${inputTodo.value}`
 
     ul.appendChild(li);
-
-
 })
+

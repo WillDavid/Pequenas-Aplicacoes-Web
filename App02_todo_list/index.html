@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TodoList</title>
 </head>
 <body>
-
-    <form action="#" method="post">
-        <input type="text" placeholder="Tarefa" id="inputTodo">
-    <button type="submit" id="btnTodo">Criar tarefa</button>
-    </form>
+    <div class="container">
+        <form action="#" method="post">
+            <input type="text" placeholder="Tarefa" id="inputTodo">
+        <button type="submit" id="btnTodo">Criar tarefa</button>
+        </form>
+    
+        
+        <ul id="ulTodo">
+            <h3>Tarefas</h3>
+        </ul>
+    </div>
 
     
-    <ul id="ulTodo">
-        <li>Tarefas</li>
-    </ul>
 
-
-
-    
-
-    <script src="script.js"></script>
-    
+    <script src="script.js"></script> 
 </body>
 </html>
