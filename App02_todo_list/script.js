@@ -5,6 +5,7 @@ const form = document.querySelector('form');
 const ul = document.getElementById('ulTodo');
 
 
+
 form.addEventListener("submit", (evento) => {
     evento.preventDefault();
     if(inputTodo.value !== ""){
