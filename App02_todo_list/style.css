@@ -4,8 +4,28 @@
 }
 
 body {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
+}
+
+.container {
+    width: 50%;
+    border: 2px solid #8888;
+    margin: 50px;
+}
+
+ul {
+    height: 100%;
+
+}
+
+ul li {
+    margin: 40px;
+}
+
+ul h3 {
+    text-align: center;
 }

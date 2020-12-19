@@ -7,9 +7,16 @@ const ul = document.getElementById('ulTodo');
 
 form.addEventListener("submit", (evento) => {
     evento.preventDefault();
-    const li = document.createElement('li');
-    li.innerHTML = `${inputTodo.value}`
+    if(inputTodo.value !== ""){
+        const li = document.createElement('li');
+        li.innerHTML = `${inputTodo.value}`
 
-    ul.appendChild(li);
+        ul.appendChild(li);
+    }else{
+        window.alert("Informe uma tarefa")
+    }
+    
+
+    inputTodo.value = '';
 })
 
