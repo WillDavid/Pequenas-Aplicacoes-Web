@@ -30,7 +30,7 @@ const container = document.getElementById('container');
 for(let i=0;i<links.length;i++){
     const divCard = document.createElement('div');
     divCard.className = "card";
-    divCard.innerHTML = `<a href="${links[i].link}" id="link"><button><h2 id="nameLink">${links[i].nameLink}</h2></button></a>`;
+    divCard.innerHTML = `<a href="${links[i].link}" id="link" target="_blank"><button><h2 id="nameLink">${links[i].nameLink}</h2></button></a>`;
     container.appendChild(divCard)
 }
 

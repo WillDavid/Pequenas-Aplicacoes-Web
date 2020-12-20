@@ -61,5 +61,8 @@ body {
         width: 80%;
         margin: auto;
         margin-top: 20px;
-    }    
+    }
+    .card button:hover {
+        transform: none;
+    } 
 }
