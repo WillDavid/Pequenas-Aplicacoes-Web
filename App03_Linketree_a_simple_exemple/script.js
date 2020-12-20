@@ -40,9 +40,9 @@ randomColorBody(body)
 function randomColorBody(body){
     const x = Math.floor(Math.random() * (3 - 1) ) + 1;
     if(x == 1){
-        body.style.background = "linear-gradient(to right, #ff4b1f, #ff9068)";
+        body.style.backgroundImage = "url('https://3.bp.blogspot.com/-JCEipVrOEzA/U3thFQc6ExI/AAAAAAAAHIc/75Dv4v6vPCE/s1600/Super+Nintendo+3.gif')"
     }else if(x== 2){
-        body.style.background = "linear-gradient(to right, #16BFFD,#CB3066)";
+        body.style.backgroundImage = "url('https://i.imgur.com/Sob3j6L.gif')";
     }
 }
 
