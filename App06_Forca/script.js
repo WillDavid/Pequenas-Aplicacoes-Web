@@ -1,13 +1,9 @@
-const bd = ["Texto", "Willim", "Ricardo"
+const bd = ["Texto", "Ricardo"
 ]
 let life = 5
 let letra = ''
 
 const escolhido = bd[Math.floor(Math.random() * bd.length)];
-
-
-
-
 
 function verificaLetra(letra){
     if( escolhido.indexOf(letra) == -1 ){
@@ -16,4 +12,16 @@ function verificaLetra(letra){
         console.log("Achei")
     }
 }
+
+letra = document.getElementById('inputLetra')
+const form = document.getElementById('form')
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(letra.value)
+})
+
+
+
 
