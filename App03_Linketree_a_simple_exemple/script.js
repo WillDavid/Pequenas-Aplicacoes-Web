@@ -8,12 +8,8 @@ const links = [
         link: "https://github.com/WillDavid"
     },
     {
-        nameLink: "Toca da Coruja Podcast",
-        link: "https://open.spotify.com/show/5Lj22JaGFe1HKOeyHes5Ba"
-    },
-    {
-        nameLink: "Twitter",
-        link: "https://twitter.com/UiuDavid"
+        nameLink: "Bug Pop Podcast",
+        link: "https://open.spotify.com/show/58MEbkzLElWW0Klk1sqk1G"
     },
     {
         nameLink: "Instagram",
@@ -38,11 +34,18 @@ const body = document.querySelector('body');
 randomColorBody(body)
 
 function randomColorBody(body){
-    const x = Math.floor(Math.random() * (3 - 1) ) + 1;
+
+   
+    const x =  Math.floor(Math.random() * (5 - 1) ) + 1;
+    
     if(x == 1){
-        body.style.backgroundImage = "url('https://3.bp.blogspot.com/-JCEipVrOEzA/U3thFQc6ExI/AAAAAAAAHIc/75Dv4v6vPCE/s1600/Super+Nintendo+3.gif')"
+        body.style.backgroundImage = "url('https://giffiles.alphacoders.com/209/209343.gif')"
     }else if(x== 2){
-        body.style.backgroundImage = "url('https://i.imgur.com/Sob3j6L.gif')";
+        body.style.backgroundImage = "url('https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif')"
+    }else if(x == 3){
+        body.style.backgroundImage = "url('https://steamuserimages-a.akamaihd.net/ugc/957473855117891289/F7A5B263CDFB96298115BD0134A0D3A437D2F956/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')"
+    }else {
+        body.style.backgroundImage = "url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f4b50571097767.5bb9fee9d515c.gif')"
     }
 }
 
